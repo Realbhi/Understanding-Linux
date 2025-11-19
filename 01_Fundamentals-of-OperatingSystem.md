@@ -7,4 +7,5 @@ Before delving into Linux specifics, it is vital to grasp the fundamental role o
 - Users interact via Graphical User Interface (GUI) or Command Line Interface (CLI) provided by the OS.
 - Applications rely on the OS to allocate hardware resources without directly managing them.
 - The OS is the “heart” of the computer, enabling efficient and secure operation.
-- This foundational understanding sets the stage for appreciating Linux as a specialized OS.
+
+This foundational understanding sets the stage for appreciating Linux as a specialized OS.
