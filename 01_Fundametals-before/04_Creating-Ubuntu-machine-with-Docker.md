@@ -6,9 +6,9 @@
 
 Before installing Docker Desktop, make sure your Mac meets the basic requirements. According to the official docs:
 
-* A supported macOS version (current + two previous major releases) is required. ([Docker Documentation][1])
-* At least **4 GB of RAM** is required. ([Docker Documentation][1])
-* Virtualization support is needed (most modern Macs have it). ([Medium][2])
+* A supported macOS version (current + two previous major releases) is required. 
+* At least **4 GB of RAM** is required. 
+* Virtualization support is needed (most modern Macs have it).
 
 If your Mac meets these, you’re good to proceed.
 
@@ -18,9 +18,9 @@ If your Mac meets these, you’re good to proceed.
 
 Here’s how to install it:
 
-1. Go to the official Docker Desktop download page and get the macOS installer for your architecture (Intel or Apple silicon). ([Docker Documentation][1])
-2. Open the downloaded `.dmg` file, then drag the Docker icon into your **Applications** folder. ([Docker Documentation][1])
-3. Navigate to `Applications`, launch **Docker.app**. On first launch you may need to accept the license/terms and grant privileged access (for network components, symlinks) as prompted. ([Docker Documentation][3])
+1. Go to the official Docker Desktop download page and get the macOS installer for your architecture (Intel or Apple silicon). 
+2. Open the downloaded `.dmg` file, then drag the Docker icon into your **Applications** folder. 
+3. Navigate to `Applications`, launch **Docker.app**. On first launch you may need to accept the license/terms and grant privileged access (for network components, symlinks) as prompted. 
 4. Wait until the Docker whale icon in the menu bar stops showing “Starting…” and shows that Docker is running (often it becomes solid or shows status like “Docker Desktop is running”).
 
 At this point the Docker daemon should be up and running.
