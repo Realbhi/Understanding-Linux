@@ -1,5 +1,4 @@
 #  **Sudo Access and Privilege Escalation**
----
 
 ##  What is `sudo`?
 
