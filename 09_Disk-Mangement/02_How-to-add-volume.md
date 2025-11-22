@@ -126,4 +126,9 @@ Here’s a refined version that’s 100% accurate and clear:
   * `ext4` → general purpose, widely supported
   * `xfs` → great for large files and high-performance workloads
 
+---
 
+***Practical Advice**
+Always ensure volumes and instances share the same availability zone.
+Monitor disk usage regularly to avoid running out of space.
+Use mounting strategically to assign specific storage to logs or application data.
