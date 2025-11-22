@@ -6,13 +6,14 @@ Command is used to view running processes.
 ps
 ```
 ---
+
 **Understanding ps aux Output**
-
-**USER:** The user who initiated the process.
-**PID:** Unique Process ID.
-**CPU % and Memory %:** Resource usage by the process.
-**COMMAND:** The command that started the process.
-
+```
+- **USER:** The user who initiated the process.
+- **PID:** Unique Process ID.
+- **CPU % and Memory %:** Resource usage by the process.
+- **COMMAND:** The command that started the process.
+```
 ---
 
 Lists all processes with detailed information including CPU and memory utilization.
