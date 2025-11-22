@@ -25,7 +25,7 @@ ps aux
 
 Lists processes but does not show memory utilization, only CPU usage.
 ```
-ps -ef
+ps - ef
 ```
 ---
 
