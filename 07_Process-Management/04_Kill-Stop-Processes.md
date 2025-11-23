@@ -54,6 +54,14 @@ To terminate using process name:
 ```bash
 pkill processname
 ```
+
+pkill processname does not use SIGKILL by default. pkill sends SIGTERM (signal 15) unless you specify another signal.
+
+To force kill (SIGKILL), you must specify -9 **This also kills all instance of process**
+```
+pkill -9 processname
+```
+
 ---
 
 Force kill a process:
@@ -74,13 +82,7 @@ kill -9 PID
  
   - In that case, even SIGKILL waits until the state clears.
 
----
 
-Kill all instances of a process:
-
-```bash
-pkill -9 processname
-```
 ---
 
 ### Stopping & Resuming Processes
