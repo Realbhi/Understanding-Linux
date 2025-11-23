@@ -14,12 +14,12 @@ systemctl list-units --type=service
 
 stops a service.
 ```
-systemctl stop 
+systemctl stop service-name
 ```
 
 starts a service.
 ```
-systemctl start 
+systemctl start service-name
 ```
 
 Enable a service at startup.
