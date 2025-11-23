@@ -21,15 +21,15 @@ kill PID
 
 - The process can:
 
- - obey it and exit (most do)
+  - obey it and exit (most do)
 
- - ignore it
+  - ignore it
 
- - catch it and clean up
+  - catch it and clean up
 
- - delay termination
+  - delay termination
 
- - completely override the behavior
+  - completely override the behavior
 
 So SIGTERM does not guarantee termination. So we need to force kill which send SIGKILL (kill -9 PID)
 
@@ -66,19 +66,19 @@ kill -9 PID
 
 - SIGKILL:
 
- - cannot be ignored
+  - cannot be ignored
 
- - cannot be caught
+  - cannot be caught
 
- - cannot be blocked
+  - cannot be blocked
 
- - kills the process immediately at the kernel level
+  - kills the process immediately at the kernel level
 
- - So yes, SIGKILL will terminate the process 100%, unless:
+  - So yes, SIGKILL will terminate the process 100%, unless:
 
- - process is in uninterruptible sleep state (D state), usually waiting on I/O.
+  - process is in uninterruptible sleep state (D state), usually waiting on I/O.
  
- - In that case, even SIGKILL waits until the state clears.
+  - In that case, even SIGKILL waits until the state clears.
 
 ---
 
