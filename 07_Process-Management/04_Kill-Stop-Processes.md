@@ -66,17 +66,11 @@ kill -9 PID
 
 - SIGKILL:
 
-  - cannot be ignored
-
-  - cannot be caught
-
-  - cannot be blocked
+  - cannot be ignored , caught and blocked
 
   - kills the process immediately at the kernel level
 
-  - So yes, SIGKILL will terminate the process 100%, unless:
-
-  - process is in uninterruptible sleep state (D state), usually waiting on I/O.
+  - So yes, SIGKILL will terminate the process 100%, unless: process is in uninterruptible sleep state (D state), usually waiting on I/O.
  
   - In that case, even SIGKILL waits until the state clears.
 
