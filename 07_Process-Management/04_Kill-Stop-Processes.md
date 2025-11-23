@@ -62,6 +62,8 @@ To force kill (SIGKILL), you must specify -9 **This also kills all instance of p
 pkill -9 processname
 ```
 
+<img width="1460" height="540" alt="image" src="https://github.com/user-attachments/assets/a5bdfe26-6053-4b19-9031-feed0dd8fe30" />
+
 ---
 
 Force kill a process:
