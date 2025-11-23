@@ -84,7 +84,6 @@ pkill -9 processname
 ---
 
 ### Stopping & Resuming Processes
----
 
 Stop a running process:
 
