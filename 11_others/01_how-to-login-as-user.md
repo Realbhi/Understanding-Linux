@@ -105,6 +105,12 @@ Paste the public key you copied.
 
 Save file.
 
+**NOTE:** SSH only checks
+~/.ssh/authorized_keys
+
+do not use other name than authorized_keys
+
+
 ### 6. Set correct permissions:
 
 ```
