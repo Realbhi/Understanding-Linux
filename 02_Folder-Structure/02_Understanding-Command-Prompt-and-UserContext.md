@@ -1,4 +1,4 @@
-## ** The Command Prompt and User Context**
+## **The Command Prompt and User Context**
 
 When logged into a Linux terminal, the **prompt** provides key information about who you are, where you are, and what permissions you have.
 
