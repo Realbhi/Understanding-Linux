@@ -126,6 +126,18 @@ Let’s break this down:
 | **NOPASSWD:**        | Runs without prompting for a password                     |
 | **/path/to/command** | The specific command(s) the user can execute with sudo    |
 
+
+### **Meaning of the first ALL in more detail**
+
+- This is the HOSTS field.
+
+- It means:
+
+  - This rule applies when the user is logging in from any host.
+  - On most single Linux machines it doesn't matter — you only have one host.
+  - But on systems using NIS, LDAP, or clusters, sudoers rules may apply to multiple machines.
+  - So: username ALL = ... means: Allow username to use this sudo rule on any machine.
+
 ---
 
 ###  Example 1 — Allow a user to restart Nginx without password:
@@ -162,6 +174,9 @@ ash ALL=(ALL) /usr/bin/apt update
 ```
 
 User will be prompted for password when running `sudo apt update`.
+
+
+Here’s a **clear, concise note** you can copy into your documentation:
 
 ---
 
