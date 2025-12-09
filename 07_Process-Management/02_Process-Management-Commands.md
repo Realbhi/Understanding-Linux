@@ -7,6 +7,12 @@ ps
 ```
 ---
 
+Lists all processes with detailed information including CPU and memory utilization.
+```
+ps aux
+```
+
+
 **Understanding ps aux Output**
 ```
 - USER: The user who initiated the process.
@@ -14,13 +20,6 @@ ps
 - CPU % and Memory %: Resource usage by the process.
 - COMMAND: The command that started the process.
 ```
----
-
-Lists all processes with detailed information including CPU and memory utilization.
-```
-ps aux
-```
-
 ---
 
 Lists processes but does not show memory utilization, only CPU usage.
