@@ -15,6 +15,40 @@ kill PID
 
 ---
 
+**If the process HAS a SIGTERM handler**
+
+- Kernel delivers SIGTERM
+- Handler runs
+- Application decides what to do:
+ - Clean up resources
+ - Save state
+ - Close connections
+
+Then exit normally (usually via exit())
+
+➡ This is called graceful termination
+➡ The process chooses when and how to exit
+➡ If it never exits, it can technically keep running
+
+⚠️ Important:
+A handler does not automatically kill the process.
+The process must explicitly exit ie The process kills itself by calling exit().
+
+##
+
+**If the process does NOT have a SIGTERM handler**
+
+- Kernel delivers SIGTERM
+- Default action applies
+- Kernel forcibly terminates the process
+- No user-level code runs
+ - Immediate termination
+ - No graceful shutdown
+ - Only kernel-level cleanup happens
+
+
+---
+
 **Does SIGTERM always terminate the process?**
 
 - No ,  SIGTERM is a polite request: “Please stop yourself.”
