@@ -49,3 +49,11 @@ Counting processes can be done using pipe commands such as :
 ```
 ps aux | nl or ps aux | wc -l.
 ```
+
+**ps aux | nl**
+<img width="1428" height="618" alt="image" src="https://github.com/user-attachments/assets/db511273-ec91-4c2d-8c39-e247fd56c63b" />
+
+**ps aux | wc -l**
+<img width="1428" height="36" alt="image" src="https://github.com/user-attachments/assets/f84a836c-c989-42d7-9760-762625560e93" />
+
+
