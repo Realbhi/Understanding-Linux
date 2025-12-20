@@ -27,9 +27,9 @@ ps aux
 ```
 Shows:
 
-- All processes from all users
-- Including background services and daemons
-- Not limited to any terminal
+- The ```a option``` displays processes from all users, not just the current user, lifting the restriction that normally limits the output to processes associated with the current terminal.
+- The ```u option``` provides a user-oriented format, showing detailed information about each process, including the user who owns it, CPU and memory usage, and other relevant metrics.
+- The ```x option``` includes processes that are not attached to a terminal (tty), such as background system services or daemons, which would otherwise be excluded from the output.
 
 **Understanding ps aux Output**
 ```
@@ -41,8 +41,16 @@ Shows:
 ---
 Lists processes but does not show memory utilization, only CPU usage.
 ```
-ps - ef
+ps -ef 
 ```
+-e = select all processes (not just the ones attached to your terminal)
+-f = full-format listing ( UID, PID,  PPID,  C, STIME, TTY, TIME, CMD )
+
+```
+ps -ef shows everything in a predefined full format,
+ps -eo lets you choose exactly which columns to show.
+```
+
 ---
 
 Counting processes can be done using pipe commands such as :
