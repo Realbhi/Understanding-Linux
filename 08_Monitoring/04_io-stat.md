@@ -248,6 +248,29 @@ Your case:
 
 ---
 
+## **How to interpret load average with CPU cores**
+
+Rule of thumb
+
+Load average ≈ number of busy or waiting processes
+
+Now compare it to number of cores.
+
+If you have 10 cores
+Load	Meaning
+1	1 core busy, 9 idle
+5	~5 cores busy
+10	all cores fully busy
+15	10 running + 5 waiting (overloaded)
+
+So:
+```
+1m = 5 on a 10-core system
+```
+➡ roughly 50% CPU capacity in use
+
+---
+
 ## One-sentence mental model (lock this in)
 
 > **Load average tells how many processes want CPU or are blocked, averaged over time windows of 1, 5, and 15 minutes.**
