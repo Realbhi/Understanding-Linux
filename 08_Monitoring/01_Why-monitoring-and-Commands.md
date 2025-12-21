@@ -25,7 +25,7 @@ Monitoring helps identify processes consuming excessive CPU, memory, or disk spa
 
 - ```du -sh```             Summarizes disk usage for specific directories to identify large files or folders.
 
-- ```du -sh*```
+- ```du -sh *```           show disk usage for all the files and folder individually inside the directory your in.
 
 - `iostat`                 Display CPU and disk I/O statistics
 
